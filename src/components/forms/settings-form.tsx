@@ -46,7 +46,7 @@ export function SettingsForm() {
   const { isSubmitting, errors } = form.formState;
 
   return (
-    <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
+    <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8" noValidate>
       {/* 프로필 섹션 */}
       <section>
         <h3 className="mb-1 font-semibold">프로필</h3>
