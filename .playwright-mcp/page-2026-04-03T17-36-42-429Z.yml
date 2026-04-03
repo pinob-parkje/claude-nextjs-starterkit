@@ -1,0 +1,150 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - banner [ref=e3]:
+      - generic [ref=e4]:
+        - link "StarterKit" [ref=e5] [cursor=pointer]:
+          - /url: /
+          - img [ref=e7]
+          - generic [ref=e9]: StarterKit
+        - navigation [ref=e10]:
+          - link "기능" [ref=e11] [cursor=pointer]:
+            - /url: /#features
+          - link "대시보드" [ref=e12] [cursor=pointer]:
+            - /url: /dashboard
+          - link "UI 쇼케이스" [ref=e13] [cursor=pointer]:
+            - /url: /ui-showcase
+        - generic [ref=e14]:
+          - button [disabled]:
+            - img
+          - link "시작하기" [ref=e15] [cursor=pointer]:
+            - /url: /sign-in
+    - main [ref=e16]:
+      - generic [ref=e19]:
+        - generic [ref=e21]:
+          - img
+          - text: Next.js 16 + shadcn UI 스타터킷
+        - heading "더 빠르게, 더 아름답게 웹을 만드세요" [level=1] [ref=e22]:
+          - text: 더 빠르게,
+          - text: 더 아름답게
+          - text: 웹을 만드세요
+        - paragraph [ref=e23]: 모던 기술 스택이 모두 갖춰진 스타터킷. 설정에 시간을 낭비하지 말고 바로 제품 개발에 집중하세요.
+        - generic [ref=e24]:
+          - link "대시보드 보기" [ref=e25] [cursor=pointer]:
+            - /url: /dashboard
+            - text: 대시보드 보기
+            - img
+          - link "UI 쇼케이스" [ref=e26] [cursor=pointer]:
+            - /url: /ui-showcase
+        - generic [ref=e27]:
+          - generic [ref=e28]: Next.js 16
+          - generic [ref=e29]: TypeScript
+          - generic [ref=e30]: Tailwind v4
+          - generic [ref=e31]: shadcn UI
+          - generic [ref=e32]: Framer Motion
+          - generic [ref=e33]: Lenis
+      - generic [ref=e35]:
+        - generic [ref=e36]:
+          - paragraph [ref=e37]: 기능
+          - heading "필요한 모든 것이 이미 준비되어 있습니다" [level=2] [ref=e38]:
+            - text: 필요한 모든 것이
+            - text: 이미 준비되어 있습니다
+          - paragraph [ref=e39]: 설정 없이 바로 개발을 시작할 수 있도록 검증된 라이브러리와 패턴을 통합했습니다.
+        - generic [ref=e40]:
+          - generic [ref=e42]:
+            - img [ref=e46]
+            - heading "Next.js 16 App Router" [level=3] [ref=e48]
+            - paragraph [ref=e49]: 최신 React Server Components, Turbopack 기본 빌드, 스트리밍 지원으로 최고의 성능을 제공합니다.
+          - generic [ref=e51]:
+            - img [ref=e55]
+            - heading "shadcn UI + Tailwind v4" [level=3] [ref=e61]
+            - paragraph [ref=e62]: OKLch 색상 시스템과 CSS 변수 기반 다크모드. 아름다운 컴포넌트가 이미 준비되어 있습니다.
+          - generic [ref=e64]:
+            - img [ref=e68]
+            - heading "레이아웃 시스템" [level=3] [ref=e72]
+            - paragraph [ref=e73]: 마케팅, 대시보드, 인증 레이아웃이 Route Groups로 완전히 분리되어 있습니다.
+          - generic [ref=e75]:
+            - img [ref=e79]
+            - heading "데이터 테이블" [level=3] [ref=e83]
+            - paragraph [ref=e84]: "@tanstack/react-table 기반의 정렬, 필터, 페이지네이션이 갖춰진 완전한 DataTable."
+          - generic [ref=e86]:
+            - img [ref=e90]
+            - heading "폼 유효성 검사" [level=3] [ref=e92]
+            - paragraph [ref=e93]: react-hook-form + zod 조합으로 타입 안전한 폼 관리. 인증 페이지 템플릿도 포함됩니다.
+          - generic [ref=e95]:
+            - img [ref=e99]
+            - heading "차트 & 애널리틱스" [level=3] [ref=e101]
+            - paragraph [ref=e102]: recharts 기반 shadcn/chart 컴포넌트로 아름다운 데이터 시각화를 구현하세요.
+      - generic [ref=e104]:
+        - heading "숫자로 보는 스타터킷" [level=2] [ref=e106]
+        - generic [ref=e107]:
+          - generic [ref=e109]:
+            - generic [ref=e111]: 0+
+            - paragraph [ref=e112]: shadcn UI 컴포넌트
+          - generic [ref=e114]:
+            - generic [ref=e116]: 0개
+            - paragraph [ref=e117]: 페이지 템플릿
+          - generic [ref=e119]:
+            - generic [ref=e121]: 0+
+            - paragraph [ref=e122]: 검증된 라이브러리
+          - generic [ref=e124]:
+            - generic [ref=e126]: 0%
+            - paragraph [ref=e127]: TypeScript
+      - generic [ref=e131]:
+        - paragraph [ref=e133]: 지금 시작하세요
+        - heading "아이디어를 현실로 만들 준비가 되셨나요?" [level=2] [ref=e135]
+        - paragraph [ref=e137]: 복잡한 초기 설정은 이미 끝났습니다. 지금 바로 로그인하고 당신의 프로젝트를 시작하세요.
+        - generic [ref=e139]:
+          - link "무료로 시작하기" [ref=e140] [cursor=pointer]:
+            - /url: /sign-up
+            - text: 무료로 시작하기
+            - img
+          - link "GitHub" [ref=e141] [cursor=pointer]:
+            - /url: "#"
+            - img
+            - text: GitHub
+    - contentinfo [ref=e142]:
+      - generic [ref=e143]:
+        - generic [ref=e144]:
+          - generic [ref=e145]:
+            - link "StarterKit" [ref=e146] [cursor=pointer]:
+              - /url: /
+              - img [ref=e148]
+              - generic [ref=e150]: StarterKit
+            - paragraph [ref=e151]: Next.js 16 기반의 모던 웹 스타터킷. 빠르게 시작하세요.
+          - generic [ref=e152]:
+            - heading "제품" [level=3] [ref=e153]
+            - list [ref=e154]:
+              - listitem [ref=e155]:
+                - link "기능" [ref=e156] [cursor=pointer]:
+                  - /url: /#features
+              - listitem [ref=e157]:
+                - link "대시보드" [ref=e158] [cursor=pointer]:
+                  - /url: /dashboard
+              - listitem [ref=e159]:
+                - link "UI 쇼케이스" [ref=e160] [cursor=pointer]:
+                  - /url: /ui-showcase
+          - generic [ref=e161]:
+            - heading "리소스" [level=3] [ref=e162]
+            - list [ref=e163]:
+              - listitem [ref=e164]:
+                - link "문서" [ref=e165] [cursor=pointer]:
+                  - /url: "#"
+              - listitem [ref=e166]:
+                - link "GitHub" [ref=e167] [cursor=pointer]:
+                  - /url: "#"
+              - listitem [ref=e168]:
+                - link "변경 로그" [ref=e169] [cursor=pointer]:
+                  - /url: "#"
+          - generic [ref=e170]:
+            - heading "법적고지" [level=3] [ref=e171]
+            - list [ref=e172]:
+              - listitem [ref=e173]:
+                - link "개인정보처리방침" [ref=e174] [cursor=pointer]:
+                  - /url: "#"
+              - listitem [ref=e175]:
+                - link "이용약관" [ref=e176] [cursor=pointer]:
+                  - /url: "#"
+        - generic [ref=e177]: © 2026 StarterKit. MIT 라이선스로 배포됩니다.
+  - region "Notifications alt+T"
+  - button "Open Next.js Dev Tools" [ref=e183] [cursor=pointer]:
+    - img [ref=e184]
