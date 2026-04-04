@@ -27,7 +27,6 @@ export default function SignInPage() {
 
   async function onSubmit(values: SignInValues) {
     await new Promise((r) => setTimeout(r, 1000));
-    console.log(values);
     toast.success("로그인 성공!", { description: "대시보드로 이동합니다." });
   }
 

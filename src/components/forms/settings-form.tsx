@@ -37,7 +37,6 @@ export function SettingsForm() {
   async function onSubmit(values: SettingsFormValues) {
     // 실제 API 호출을 시뮬레이션
     await new Promise((r) => setTimeout(r, 1000));
-    console.log(values);
     toast.success("설정이 저장되었습니다.", {
       description: "변경 사항이 적용되었습니다.",
     });
