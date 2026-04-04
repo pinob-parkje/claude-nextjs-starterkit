@@ -125,7 +125,6 @@ export function Sidebar({ className }: SidebarProps) {
                 </p>
               )}
               {group.items.map((item) => {
-                const Icon = item.icon!;
                 const active = isActive(item.href);
                 return (
                   <Link
@@ -142,7 +141,7 @@ export function Sidebar({ className }: SidebarProps) {
                     )}
                     title={isCollapsed ? item.label : undefined}
                   >
-                    <Icon className="size-4 shrink-0" />
+                    {item.icon && <item.icon className="size-4 shrink-0" />}
                     {!isCollapsed && <span>{item.label}</span>}
                   </Link>
                 );

@@ -1,10 +1,12 @@
 "use client";
 
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import { ArrowLeft, Search } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 export default function NotFound() {
+  const router = useRouter();
   return (
     <div className="relative flex min-h-screen flex-col items-center justify-center">
       {/* 배경 */}
@@ -23,7 +25,7 @@ export default function NotFound() {
           요청하신 페이지가 존재하지 않거나 이동되었습니다.
         </p>
         <div className="flex items-center justify-center gap-3">
-          <Button variant="outline" className="gap-2" onClick={() => window.history.back()}>
+          <Button variant="outline" className="gap-2" onClick={() => router.back()}>
             <ArrowLeft className="size-4" />
             뒤로 가기
           </Button>

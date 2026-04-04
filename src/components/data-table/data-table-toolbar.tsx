@@ -1,8 +1,8 @@
 "use client";
 
 import { Search, X } from "lucide-react";
+import { useState, useEffect } from "react";
 import { useDebounceValue } from "usehooks-ts";
-import { useEffect } from "react";
 import type { Table } from "@tanstack/react-table";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
@@ -20,8 +20,9 @@ export function DataTableToolbar<TData>({
   setGlobalFilter,
   searchPlaceholder = "검색...",
 }: DataTableToolbarProps<TData>) {
-  // 검색 입력 디바운스 (300ms) — usehooks-ts 활용
-  const [debouncedValue, setDebouncedValue] = useDebounceValue(globalFilter, 300);
+  // 검색 입력 디바운스 (300ms) — 로컬 상태를 제어 입력으로 관리 후 디바운스 적용
+  const [inputValue, setInputValue] = useState(globalFilter);
+  const [debouncedValue] = useDebounceValue(inputValue, 300);
 
   useEffect(() => {
     setGlobalFilter(debouncedValue);
@@ -35,8 +36,8 @@ export function DataTableToolbar<TData>({
         <Search className="absolute left-2.5 top-1/2 size-4 -translate-y-1/2 text-muted-foreground" />
         <Input
           placeholder={searchPlaceholder}
-          defaultValue={globalFilter}
-          onChange={(e) => setDebouncedValue(e.target.value)}
+          value={inputValue}
+          onChange={(e) => setInputValue(e.target.value)}
           className="pl-8"
         />
       </div>
@@ -45,8 +46,8 @@ export function DataTableToolbar<TData>({
           variant="ghost"
           size="sm"
           onClick={() => {
+            setInputValue("");
             setGlobalFilter("");
-            setDebouncedValue("");
           }}
           className="gap-1.5 text-muted-foreground"
         >

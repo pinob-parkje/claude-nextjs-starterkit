@@ -1,5 +1,6 @@
 "use client";
 
+import { useId } from "react";
 import { Area, AreaChart, CartesianGrid, XAxis, YAxis } from "recharts";
 import {
   ChartContainer,
@@ -35,15 +36,17 @@ const chartConfig: ChartConfig = {
 };
 
 export function OverviewChart() {
+  const chartId = useId();
+
   return (
     <ChartContainer config={chartConfig} className="h-[280px] w-full">
       <AreaChart data={chartData} margin={{ top: 10, right: 10, left: -10, bottom: 0 }}>
         <defs>
-          <linearGradient id="fillRevenue" x1="0" y1="0" x2="0" y2="1">
+          <linearGradient id={`fillRevenue-${chartId}`} x1="0" y1="0" x2="0" y2="1">
             <stop offset="5%" stopColor="var(--color-primary)" stopOpacity={0.3} />
             <stop offset="95%" stopColor="var(--color-primary)" stopOpacity={0} />
           </linearGradient>
-          <linearGradient id="fillUsers" x1="0" y1="0" x2="0" y2="1">
+          <linearGradient id={`fillUsers-${chartId}`} x1="0" y1="0" x2="0" y2="1">
             <stop offset="5%" stopColor="var(--color-chart-2)" stopOpacity={0.3} />
             <stop offset="95%" stopColor="var(--color-chart-2)" stopOpacity={0} />
           </linearGradient>
@@ -66,14 +69,14 @@ export function OverviewChart() {
           dataKey="revenue"
           stroke="var(--color-primary)"
           strokeWidth={2}
-          fill="url(#fillRevenue)"
+          fill={`url(#fillRevenue-${chartId})`}
         />
         <Area
           type="monotone"
           dataKey="users"
           stroke="var(--color-chart-2)"
           strokeWidth={2}
-          fill="url(#fillUsers)"
+          fill={`url(#fillUsers-${chartId})`}
         />
       </AreaChart>
     </ChartContainer>
